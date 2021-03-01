@@ -1,13 +1,13 @@
 # Microservices
-Introduction To Web Services
-What is a web service?
+## Introduction To Web Services
+### What is a web service?
 Web Service - W3C Definition
 - Software system designed to support interoperable machine-to-machine interaction over a network.
 3 Keys
 - Designed for machine-to-machine (or application-to-application) interaction
 - Should be interoperable-Not platform dependent
 - Should allow communication over a network
-Important How Questions related to Web Services
+### Important How Questions related to Web Services
 How does data exchange between applications take place?
 - Application sends input call to web service (Request).
 - Web service needs to send output back to application (Response).
@@ -26,7 +26,7 @@ How does the Application A know the format of Request and Response?
         - What is the structure of the response which is returned by the service?
     - Endpoint
         - Where is the service available?
-Web Services - Key Terminology
+### Web Services - Key Terminology
 Request:
 - The input of our service.
 Response:
@@ -44,7 +44,7 @@ Transport:
 - Defines how a service is called.
 - HTTP and MQ?
 - Exposed over internet or queue?
-Introduction to SOAP Web Services
+### Introduction to SOAP Web Services
 Web Service Groups:
 - SOAP-based
     - Simple Object Access Protocol.
@@ -65,7 +65,7 @@ Web Service Groups:
     - SOAP over HTTP
 - Service Definition
     - WSDL
-Introduction to RESTful Web Services
+### Introduction to RESTful Web Services
 Rest:
 - REpresentational State Transfer
 - Format defined by Hyper Text Transfer Protocol(HTTP)
@@ -81,37 +81,35 @@ Rest:
     - Only HTTP
 - Service Definition
     - No Standard, WADL/Swagger, etc.
-SOAP vs RESTful Web Services
+### SOAP vs RESTful Web Services
 - Restrictions vs Architectural Approach
 - Data Exchange Format
 - Service Definition
 - Transport
 - Ease of implementation
 
-Restful Web Services with Spring Boot
+## Restful Web Services with Spring Boot
 1. Initializing a RESTful Services Project with Spring Boot
 2. Understanding the RESTful Services we would create in this course 
-    1. Notes: Restful Web Services
-    2. Social Media Application
-    3. 
-    4. User -> Posts (one-to-many)
-    5. 
-    6. Retrieve all Users   - GET /users
-    7. Create a User         - POST /users
-    8. Retrieve one User   - GET users/{id} -> /users/1
-    9. Delete a User          - DELETE users/{id} -> /users/1
-    10. 
-    11. Retrieve all posts for a User - GET /users/{id}/posts
-    12. Create a post for a User        - POST /users/{id}/posts
-    13. Retrieve details of a post       - GET /users/{id}/posts/{post_id}
+- Notes: Restful Web Services
+    - Social Media Application
+  
+    - User -> Posts (one-to-many)
+    - Retrieve all Users   - GET /users
+    -  Create a User         - POST /users
+    -  Retrieve one User   - GET users/{id} -> /users/1
+    -  Delete a User          - DELETE users/{id} -> /users/1
+    -  Retrieve all posts for a User - GET /users/{id}/posts
+    -  Create a post for a User        - POST /users/{id}/posts
+    -  Retrieve details of a post       - GET /users/{id}/posts/{post_id}
 3. Creating a Hello World Service
 4. Enhancing the Hello World Service to return a Bean
 5. Quick Review of Spring Boot Auto Configuration and Dispatcher Servlet
-    1. What is dispatcher servlet?
-    2. Who is configuring dispatcher servlet?
-    3. What does dispatcher servlet do?
-    4. How does the HelloWorldBean object get converted to JSON?
-    5. Who is configuring the error mapping?
+- What is dispatcher servlet?
+- Who is configuring dispatcher servlet?
+- What does dispatcher servlet do?
+- How does the HelloWorldBean object get converted to JSON? 
+- Who is configuring the error mapping?
 6. Enhancing the Hello World Service with a Path Variable
 7. Creating User Bean and User Service
 8. Implementing GET Methods for User Resource
@@ -126,17 +124,17 @@ Restful Web Services with Spring Boot
 17. Overview of Advanced RESTful Service Features
 18. Part:
     1. Internationalization for RESTful Services
-        1. Internationalization
-            1. i18n
-        2. Configuration
-            1. LocalResolver
-                1. Default Locale - Locale.US
-            2. ResourceBundleMessageSource
-        3. Usage
-            1. Autowire MessageSource
-            2. @RequestHeader(value = “Accept-Language”, required = false) Locale locale
-            3. messageSource.getMessage(“helloWorld.message”, null, locale)
-    2. Internationalization for RESTful Services
+    - Internationalization
+        - i18n
+    - Configuration
+        - LocalResolver
+        - Default Locale - Locale.US
+        - ResourceBundleMessageSource
+    - Usage
+        - Autowire MessageSource 
+        - @RequestHeader(value = “Accept-Language”, required = false) Locale locale
+        - messageSource.getMessage(“helloWorld.message”, null, locale)
+    - Internationalization for RESTful Services
 19. Content Negotiation - Implementing Support for XML
 20. Configuring Auto Generation of Swagger Documentation
 21. Introduction to Swagger Documentation Format
@@ -144,13 +142,22 @@ Restful Web Services with Spring Boot
 23. Monitoring APIs with Spring Boot Actuator
 24. Implementing Static Filtering for RESTful Service
 25. Implementing Dynamic Filtering for RESTful Service
-26. Versioning RESTful Services - Basic Approach with URIs - Versioning
-        1. Media type versioning (a.k.a “content negotiation” or “accept header”) - Github
-        2. (Custom) headers versioning - Microsoft
-        3. URI Versioning - Twitter
-        4. Parameter versioning - Amazon
-        5. Factors - URI Pollution - Misuse of HTTP Headers - Caching - Can we execute the request on the browser? - API Documentation
-        6. No Perfect Solution
+26. Versioning RESTful Services - Basic Approach with URIs- Versioning
+- Media type versioning (a.k.a “content negotiation” or “accept header”)
+    - Github
+- (Custom) headers versioning
+    - Microsoft
+- URI Versioning
+    - Twitter
+- Parameter versioning
+    - Amazon
+- Factors
+    - URI Pollution
+    - Misuse of HTTP Headers
+    - Caching
+    - Can we execute the request on the browser?
+    - API Documentation
+-  No Perfect Solution
 27. Versioning RESTful Services - Header and Content Negotiation Approach
 28. Implementing Bacis Authentication with Spring Security
 29. Overview of Connection RESTful Service to JPA
