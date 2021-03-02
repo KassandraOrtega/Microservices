@@ -1,6 +1,6 @@
 # Microservices
 
-Quick Introduction to Microservices
+## Quick Introduction to Microservices
 1. Introduction to Spring Cloud
   - Microservices
     - REST
@@ -11,7 +11,7 @@ Quick Introduction to Microservices
 3. Advantages of Microservices Architectures
 4. Microservice Componenets - Standardizing Ports and URL
 
-Microservices with Spring Cloud - V2
+## Microservices with Spring Cloud - V2
 1. Setting up Limits Microservice
 2. Creating a hard coded limits service
 3. Enhance limits service - Get configuration from application props
